@@ -45,10 +45,14 @@ refs.selectBreedEl.addEventListener('change', event => {
       refs.loaderEl.classList.remove('hidden');
       refs.catInfoEl.innerHTML = '';
       const html = `
-      <img src="${catImg}" alt="${catName}" class="cat-img">
-      <div class="cat-text-cont"><h2>${catName}</h2>
-      <p>${catDescription}</p>
-      <p><b>Temperament:</b> ${catTemperament}</p></div>`;
+      <div class="cat-img-container">
+        <img src="${catImg}" alt="${catName}" class="cat-img" width="600px" height="500px">
+      </div>
+      <div class="cat-text-cont">
+        <h2>${catName}</h2>
+        <p>${catDescription}</p>
+        <p><b>Temperament:</b> ${catTemperament}</p>
+      </div>`;
       refs.catInfoEl.insertAdjacentHTML('beforeend', html);
       refs.loaderEl.classList.add('hidden');
     })

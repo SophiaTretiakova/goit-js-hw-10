@@ -17,12 +17,9 @@ p {
 }
 
 img {
-  width: 100%;
-  max-width: 600px;
   height: auto;
   display: block;
   border-radius: 15px;
-  object-fit: contain;
 }
 
 .hidden {
@@ -110,7 +107,7 @@ img {
 .cat-info {
   max-width: 1170px;
   margin: auto;
-  padding: 15px 15px;
+  padding: 25px 15px;
   display: flex;
 }
 
